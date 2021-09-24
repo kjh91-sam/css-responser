@@ -1,0 +1,10 @@
+{
+    "desktop" : {
+        "default-size" : 1440,
+        "break-points" : [1250, 1000]
+    },
+    "mobile" : {
+        "default-size" : 414,
+        "break-points" : [750]
+    }
+}
