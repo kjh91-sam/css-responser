@@ -38,7 +38,7 @@ def calc_by_brkp(styling_units, isMobile=True, brkp_i=0):
             pixel_vals = re.findall(r"(\d+)px", style)
             for value in pixel_vals:
                 int_val = int(value)
-                style = style.replace(value + "px", str(round(int_val / 414 * 100, 2)) + "vw" if isMobile else
+                style = style.replace(value + "px", str(round(int_val / MOBILE * 100, 2)) + "vw" if isMobile else
                                       str(round(int_val * DESKTOP_BRKP_RATIO[brkp_i], 2)) + "px")
             calculated_styling += style + "\n"
 
